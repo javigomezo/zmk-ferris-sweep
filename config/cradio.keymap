@@ -11,9 +11,10 @@
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LSHFT k3  &ht LCTRL k4
 #define HRMR(k1,k2,k3,k4) &ht RCTRL k1  &ht RSHFT k2  &ht LALT k3  &ht RGUI k4
 
+ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
+
 / {
     // Create ñ/Ñ key
-    ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
 
     behaviors {
         ht: hold_tap {
