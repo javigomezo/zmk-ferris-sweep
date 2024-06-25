@@ -14,8 +14,6 @@
 ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
 
 / {
-    // Create ñ/Ñ key
-
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -63,6 +61,11 @@ ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
         combo_bt4 {
             timeout-ms = <50>;
             key-positions = <04 24>;
+            bindings = <&bt BT_SEL 4>;
+        };
+        combo_btclear {
+            timeout-ms = <50>;
+            key-positions = <22 24>;
             bindings = <&bt BT_SEL 4>;
         };
     };
