@@ -100,17 +100,16 @@ ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│ !        │  "       │   #      │  $       │ %        │   │ &        │ /        │ (        │     )    │  =       │
+            &kp EXCL    &kp AT   &kp RA(N3)  &kp DLLR   &kp PRCNT     &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 1        │  2       │  3       │  4       │ 5        │   │ 6        │ 7        │ 8        │ 9        │ 0        │
-
             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ !        │  "       │   #      │  $       │ %        │   │ &        │ /        │ (        │     )    │  =       │
-            &kp EXCL    &kp AT     &kp HASH  &kp DLLR   &kp PRCNT      &kp AMPS   &kp FSLH   &kp LPAR   &kp RPAR   &kp EQUAL
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  @       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp AT     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
+        //│ │        │  @       │  ·       │  €       │  0       │   │          │          │          │          │          │
+            &RA(N1)   &kp RA(N2)  &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans    &caps_word      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -121,8 +120,8 @@ ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
         //│          │  [       │  UP      │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
             &to 4     &kp LBKT   &kp UARW   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  LEFT    │  DOWN    │  RIGHT   │ %        │   │  *       │  -       │  =       │  \       │  `       │
-            &kp EXCL   &kp LARW    &kp DARW  &kp RARW  &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│  !       │  LEFT    │  DOWN    │  RIGHT   │ %        │   │  ¿       │  ?       │  =       │  \       │  `       │
+            &kp EXCL   &kp LARW    &kp DARW  &kp RARW  &kp PRCNT      &kp PLUS   &kp UNDER  &kp EQUAL  &kp BSLH   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
             &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
