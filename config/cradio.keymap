@@ -117,11 +117,11 @@ ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ª        │  º       │  UP      │  *       │ `        │   │  ^       │  (       │  )       │  {       │  }       │
-           &kp TILDE   &kp GRAVE  &kp UARW   &kp RBRC   &kp LBKT     &kp LS(LBKT) &kp RA(LBRC) &kp RA(RBRC) &kp RA(SQT) &kp RA(NUHS)
+        //│ ª        │  º       │  UP      │  `       │ *        │   │  ^       │  (       │  )       │  {       │  }       │
+           &kp TILDE   &kp GRAVE  &kp UARW   &kp LBKT   &kp RBRC     &kp LS(LBKT) &kp RA(LBKT) &kp RA(RBKT) &kp RA(SQT) &kp RA(NUHS)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  LEFT    │  DOWN    │  RIGHT   │ %        │   │  ¿       │  ?       │  ¡       │  \       │  ç       │
-            &kp EXCL   &kp LARW    &kp DARW  &kp RARW  &kp PRCNT      &kp PLUS   &kp UNDER  &kp EQUAL  &kp BSLH   &kp BSLH
+        //│  !       │  LEFT    │  DOWN    │  RIGHT   │ +        │   │  ¿       │  ?       │  ¡       │  !       │  ç       │
+            &kp EXCL   &kp LARW    &kp DARW  &kp RARW  &kp RBKT       &kp PLUS   &kp UNDER  &kp EQUAL  &kp EXCL    &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  <       │  >       │ '        │
             &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp NUBS &kp LS(NUBS) &kp MINUS
