@@ -89,7 +89,7 @@ ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,     SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │ - _      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp SPACE     &kp BSPC  &lt 1 SQT
@@ -117,16 +117,16 @@ ZMK_UNICODE_PAIR(n_tilde,   N0, N0, F, N1,   N0, N0, D, N1)
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  UP      │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &to 4     &kp LBKT   &kp UARW   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│ ª        │  º       │  UP      │  *       │ `        │   │  ^       │  (       │  )       │  {       │  }       │
+           &kp TILDE   &kp GRAVE  &kp UARW   &kp RBRC   &kp LBKT     &kp LS(LBKT) &kp RA(LBRC) &kp RA(RBRC) &kp RA(SQT) &kp RA(NUHS)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  LEFT    │  DOWN    │  RIGHT   │ %        │   │  ¿       │  ?       │  =       │  \       │  `       │
-            &kp EXCL   &kp LARW    &kp DARW  &kp RARW  &kp PRCNT      &kp PLUS   &kp UNDER  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│  !       │  LEFT    │  DOWN    │  RIGHT   │ %        │   │  ¿       │  ?       │  ¡       │  \       │  ç       │
+            &kp EXCL   &kp LARW    &kp DARW  &kp RARW  &kp PRCNT      &kp PLUS   &kp UNDER  &kp EQUAL  &kp BSLH   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│          │          │          │          │          │   │  &       │  _       │  <       │  >       │ '        │
+            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp NUBS &kp LS(NUBS) &kp MINUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &to 4          &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
